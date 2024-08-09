@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aluguel de Carros</h1>
+        <nav>
+            <ul>
+                <li><a href="#carros">Carros Disponíveis</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="carros">
+            <h2>Carros Disponíveis</h2>
+            <div class="carro">
+                <h3>Carro 1</h3>
+                <p>Modelo: Sedan</p>
+                <p>Preço: R$100/dia</p>
+            </div>
+            <div class="carro">
+                <h3>Carro 2</h3>
+                <p>Modelo: SUV</p>
+                <p>Preço: R$150/dia</p>
+            </div>
+            <div class="carro">
+                <h3>Carro 3</h3>
+                <p>Modelo: Hatchback</p>
+                <p>Preço: R$80/dia</p>
+            </div>
+        </section>
+
+        <section id="reservar">
+            <h2>Formulário de Reserva</h2>
+            <form id="form-reserva">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="carro">Escolha o Carro:</label>
+                <select id="carro" name="carro" required>
+                    <option value="Carro 1">Carro 1 - Sedan</option>
+                    <option value="Carro 2">Carro 2 - SUV</option>
+                    <option value="Carro 3">Carro 3 - Hatchback</option>
+                </select>
+
+                <label for="data">Data de Início:</label>
+                <input type="date" id="data" name="data" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aluguel de Carros. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
